@@ -1,0 +1,517 @@
+Release 14.5 - xst P.58f (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Reading design: alu.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "alu.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "alu"
+Output Format                      : NGC
+Target Device                      : xc4vfx12-12-sf363
+
+---- Source Options
+Top Module Name                    : alu
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Number of Regional Clock Buffers   : 16
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "E:/Semester 4/Architecture/ALU/mux_2to1.vhd" in Library work.
+Architecture behavioral of Entity mux_2to1 is up to date.
+Compiling vhdl file "E:/Semester 4/Architecture/ALU/adder1b.vhd" in Library work.
+Architecture behavioral of Entity adder1b is up to date.
+Compiling vhdl file "E:/Semester 4/Architecture/ALU/mux_4to1.vhd" in Library work.
+Architecture behavioral of Entity mux_4to1 is up to date.
+Compiling vhdl file "E:/Semester 4/Architecture/ALU/alu1b.vhd" in Library work.
+Architecture behavioral of Entity alu1b is up to date.
+Compiling vhdl file "E:/Semester 4/Architecture/ALU/alu.vhd" in Library work.
+Entity <alu> compiled.
+Entity <alu> (Architecture <behavioral>) compiled.
+Compiling vhdl file "E:/Semester 4/Architecture/ALU/my_package.vhd" in Library work.
+Package <my_package> compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <alu> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <alu1b> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <mux_2to1> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <adder1b> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <mux_4to1> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <alu> in library <work> (Architecture <behavioral>).
+Entity <alu> analyzed. Unit <alu> generated.
+
+Analyzing Entity <alu1b> in library <work> (Architecture <behavioral>).
+Entity <alu1b> analyzed. Unit <alu1b> generated.
+
+Analyzing Entity <mux_2to1> in library <work> (Architecture <behavioral>).
+Entity <mux_2to1> analyzed. Unit <mux_2to1> generated.
+
+Analyzing Entity <adder1b> in library <work> (Architecture <behavioral>).
+Entity <adder1b> analyzed. Unit <adder1b> generated.
+
+Analyzing Entity <mux_4to1> in library <work> (Architecture <behavioral>).
+Entity <mux_4to1> analyzed. Unit <mux_4to1> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <mux_2to1>.
+    Related source file is "E:/Semester 4/Architecture/ALU/mux_2to1.vhd".
+Unit <mux_2to1> synthesized.
+
+
+Synthesizing Unit <adder1b>.
+    Related source file is "E:/Semester 4/Architecture/ALU/adder1b.vhd".
+    Found 1-bit xor3 for signal <res>.
+    Summary:
+	inferred   1 Xor(s).
+Unit <adder1b> synthesized.
+
+
+Synthesizing Unit <mux_4to1>.
+    Related source file is "E:/Semester 4/Architecture/ALU/mux_4to1.vhd".
+WARNING:Xst:737 - Found 1-bit latch for signal <res>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+Unit <mux_4to1> synthesized.
+
+
+Synthesizing Unit <alu1b>.
+    Related source file is "E:/Semester 4/Architecture/ALU/alu1b.vhd".
+WARNING:Xst:1780 - Signal <tmp_res> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+Unit <alu1b> synthesized.
+
+
+Synthesizing Unit <alu>.
+    Related source file is "E:/Semester 4/Architecture/ALU/alu.vhd".
+WARNING:Xst:647 - Input <cin> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 1-bit xor2 for signal <oflag>.
+Unit <alu> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Latches                                              : 32
+ 1-bit latch                                           : 32
+# Xors                                                 : 33
+ 1-bit xor2                                            : 1
+ 1-bit xor3                                            : 32
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Latches                                              : 32
+ 1-bit latch                                           : 32
+# Xors                                                 : 33
+ 1-bit xor2                                            : 1
+ 1-bit xor3                                            : 32
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <alu> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block alu, actual ratio is 1.
+Latch c31/u4/res has been replicated 1 time(s) to handle iob=true attribute.
+Latch c30/u4/res has been replicated 1 time(s) to handle iob=true attribute.
+Latch c29/u4/res has been replicated 1 time(s) to handle iob=true attribute.
+Latch c28/u4/res has been replicated 1 time(s) to handle iob=true attribute.
+Latch c27/u4/res has been replicated 1 time(s) to handle iob=true attribute.
+Latch c26/u4/res has been replicated 1 time(s) to handle iob=true attribute.
+Latch c25/u4/res has been replicated 1 time(s) to handle iob=true attribute.
+Latch c24/u4/res has been replicated 1 time(s) to handle iob=true attribute.
+Latch c23/u4/res has been replicated 1 time(s) to handle iob=true attribute.
+Latch c22/u4/res has been replicated 1 time(s) to handle iob=true attribute.
+Latch c21/u4/res has been replicated 1 time(s) to handle iob=true attribute.
+Latch c20/u4/res has been replicated 1 time(s) to handle iob=true attribute.
+Latch c19/u4/res has been replicated 1 time(s) to handle iob=true attribute.
+Latch c18/u4/res has been replicated 1 time(s) to handle iob=true attribute.
+Latch c17/u4/res has been replicated 1 time(s) to handle iob=true attribute.
+Latch c16/u4/res has been replicated 1 time(s) to handle iob=true attribute.
+Latch c15/u4/res has been replicated 1 time(s) to handle iob=true attribute.
+Latch c14/u4/res has been replicated 1 time(s) to handle iob=true attribute.
+Latch c13/u4/res has been replicated 1 time(s) to handle iob=true attribute.
+Latch c12/u4/res has been replicated 1 time(s) to handle iob=true attribute.
+Latch c11/u4/res has been replicated 1 time(s) to handle iob=true attribute.
+Latch c10/u4/res has been replicated 1 time(s) to handle iob=true attribute.
+Latch c9/u4/res has been replicated 1 time(s) to handle iob=true attribute.
+Latch c8/u4/res has been replicated 1 time(s) to handle iob=true attribute.
+Latch c7/u4/res has been replicated 1 time(s) to handle iob=true attribute.
+Latch c6/u4/res has been replicated 1 time(s) to handle iob=true attribute.
+Latch c5/u4/res has been replicated 1 time(s) to handle iob=true attribute.
+Latch c4/u4/res has been replicated 1 time(s) to handle iob=true attribute.
+Latch c3/u4/res has been replicated 1 time(s) to handle iob=true attribute.
+Latch c2/u4/res has been replicated 1 time(s) to handle iob=true attribute.
+Latch c1/u4/res has been replicated 1 time(s) to handle iob=true attribute.
+Latch c0/u4/res has been replicated 1 time(s) to handle iob=true attribute.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : alu.ngr
+Top Level Output File Name         : alu
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 104
+
+Cell Usage :
+# BELS                             : 210
+#      GND                         : 1
+#      LUT2                        : 1
+#      LUT3                        : 33
+#      LUT4                        : 136
+#      MUXCY                       : 8
+#      MUXF5                       : 30
+#      VCC                         : 1
+# FlipFlops/Latches                : 64
+#      LD                          : 64
+# Clock Buffers                    : 1
+#      BUFG                        : 1
+# IO Buffers                       : 103
+#      IBUF                        : 68
+#      OBUF                        : 35
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 4vfx12sf363-12 
+
+ Number of Slices:                       90  out of   5472     1%  
+ Number of Slice Flip Flops:             32  out of  10944     0%  
+ Number of 4 input LUTs:                170  out of  10944     1%  
+ Number of IOs:                         104
+ Number of bonded IOBs:                 103  out of    240    42%  
+    IOB Flip Flops:                      32
+ Number of GCLKs:                         1  out of     32     3%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+----------------------------------------+------------------------+-------+
+Clock Signal                            | Clock buffer(FF name)  | Load  |
+----------------------------------------+------------------------+-------+
+c0/u4/res_not00011(c0/u4/res_not00011:O)| BUFG(*)(c31/u4/res)    | 64    |
+----------------------------------------+------------------------+-------+
+(*) This 1 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -12
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: 23.551ns
+   Maximum output required time after clock: 5.342ns
+   Maximum combinational path delay: 26.560ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'c0/u4/res_not00011'
+  Total number of paths / destination ports: 8450 / 64
+-------------------------------------------------------------------------
+Offset:              23.551ns (Levels of Logic = 34)
+  Source:            aluop<3> (PAD)
+  Destination:       c31/u4/res (LATCH)
+  Destination Clock: c0/u4/res_not00011 falling
+
+  Data Path: aluop<3> to c31/u4/res
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            66   0.754   1.032  aluop_3_IBUF (aluop_3_IBUF)
+     LUT4:I1->O            2   0.147   0.279  c0/u3/cout1 (tmp0)
+     MUXF5:S->O            2   0.401   0.279  c1/u3/cout_f5 (tmp1)
+     MUXF5:S->O            2   0.401   0.279  c2/u3/cout_f5 (tmp2)
+     MUXF5:S->O            2   0.401   0.279  c3/u3/cout_f5 (tmp3)
+     MUXF5:S->O            2   0.401   0.279  c4/u3/cout_f5 (tmp4)
+     MUXF5:S->O            2   0.401   0.279  c5/u3/cout_f5 (tmp5)
+     MUXF5:S->O            2   0.401   0.279  c6/u3/cout_f5 (tmp6)
+     MUXF5:S->O            2   0.401   0.279  c7/u3/cout_f5 (tmp7)
+     MUXF5:S->O            2   0.401   0.279  c8/u3/cout_f5 (tmp8)
+     MUXF5:S->O            2   0.401   0.279  c9/u3/cout_f5 (tmp9)
+     MUXF5:S->O            2   0.401   0.279  c10/u3/cout_f5 (tmp10)
+     MUXF5:S->O            2   0.401   0.279  c11/u3/cout_f5 (tmp11)
+     MUXF5:S->O            2   0.401   0.279  c12/u3/cout_f5 (tmp12)
+     MUXF5:S->O            2   0.401   0.279  c13/u3/cout_f5 (tmp13)
+     MUXF5:S->O            2   0.401   0.279  c14/u3/cout_f5 (tmp14)
+     MUXF5:S->O            2   0.401   0.279  c15/u3/cout_f5 (tmp15)
+     MUXF5:S->O            2   0.401   0.279  c16/u3/cout_f5 (tmp16)
+     MUXF5:S->O            2   0.401   0.279  c17/u3/cout_f5 (tmp17)
+     MUXF5:S->O            2   0.401   0.279  c18/u3/cout_f5 (tmp18)
+     MUXF5:S->O            2   0.401   0.279  c19/u3/cout_f5 (tmp19)
+     MUXF5:S->O            2   0.401   0.279  c20/u3/cout_f5 (tmp20)
+     MUXF5:S->O            2   0.401   0.279  c21/u3/cout_f5 (tmp21)
+     MUXF5:S->O            2   0.401   0.279  c22/u3/cout_f5 (tmp22)
+     MUXF5:S->O            2   0.401   0.279  c23/u3/cout_f5 (tmp23)
+     MUXF5:S->O            2   0.401   0.279  c24/u3/cout_f5 (tmp24)
+     MUXF5:S->O            2   0.401   0.279  c25/u3/cout_f5 (tmp25)
+     MUXF5:S->O            2   0.401   0.279  c26/u3/cout_f5 (tmp26)
+     MUXF5:S->O            2   0.401   0.279  c27/u3/cout_f5 (tmp27)
+     MUXF5:S->O            2   0.401   0.279  c28/u3/cout_f5 (tmp28)
+     MUXF5:S->O            2   0.401   0.279  c29/u3/cout_f5 (tmp29)
+     MUXF5:S->O            3   0.401   0.399  c30/u3/cout_f5 (tmp30)
+     LUT4:I3->O            1   0.147   0.514  c31/u4/res_mux0000150 (c31/u4/res_mux0000150)
+     LUT3:I0->O            2   0.147   0.000  c31/u4/res_mux0000173 (c31/u4/res_mux0000)
+     LD:D                      0.017          c31/u4/res
+    ----------------------------------------
+    Total                     23.551ns (13.242ns logic, 10.309ns route)
+                                       (56.2% logic, 43.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'c0/u4/res_not00011'
+  Total number of paths / destination ports: 64 / 33
+-------------------------------------------------------------------------
+Offset:              5.342ns (Levels of Logic = 10)
+  Source:            c10/u4/res (LATCH)
+  Destination:       zflag (PAD)
+  Source Clock:      c0/u4/res_not00011 falling
+
+  Data Path: c10/u4/res to zflag
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.358   0.554  c10/u4/res (c10/u4/res)
+     LUT4:I0->O            1   0.147   0.000  zflag_wg_lut<0> (zflag_wg_lut<0>)
+     MUXCY:S->O            1   0.278   0.000  zflag_wg_cy<0> (zflag_wg_cy<0>)
+     MUXCY:CI->O           1   0.034   0.000  zflag_wg_cy<1> (zflag_wg_cy<1>)
+     MUXCY:CI->O           1   0.034   0.000  zflag_wg_cy<2> (zflag_wg_cy<2>)
+     MUXCY:CI->O           1   0.034   0.000  zflag_wg_cy<3> (zflag_wg_cy<3>)
+     MUXCY:CI->O           1   0.034   0.000  zflag_wg_cy<4> (zflag_wg_cy<4>)
+     MUXCY:CI->O           1   0.034   0.000  zflag_wg_cy<5> (zflag_wg_cy<5>)
+     MUXCY:CI->O           1   0.034   0.000  zflag_wg_cy<6> (zflag_wg_cy<6>)
+     MUXCY:CI->O           1   0.280   0.266  zflag_wg_cy<7> (zflag_OBUF)
+     OBUF:I->O                 3.255          zflag_OBUF (zflag)
+    ----------------------------------------
+    Total                      5.342ns (4.522ns logic, 0.820ns route)
+                                       (84.6% logic, 15.4% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 496 / 2
+-------------------------------------------------------------------------
+Delay:               26.560ns (Levels of Logic = 34)
+  Source:            aluop<3> (PAD)
+  Destination:       oflag (PAD)
+
+  Data Path: aluop<3> to oflag
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            66   0.754   1.032  aluop_3_IBUF (aluop_3_IBUF)
+     LUT4:I1->O            2   0.147   0.279  c0/u3/cout1 (tmp0)
+     MUXF5:S->O            2   0.401   0.279  c1/u3/cout_f5 (tmp1)
+     MUXF5:S->O            2   0.401   0.279  c2/u3/cout_f5 (tmp2)
+     MUXF5:S->O            2   0.401   0.279  c3/u3/cout_f5 (tmp3)
+     MUXF5:S->O            2   0.401   0.279  c4/u3/cout_f5 (tmp4)
+     MUXF5:S->O            2   0.401   0.279  c5/u3/cout_f5 (tmp5)
+     MUXF5:S->O            2   0.401   0.279  c6/u3/cout_f5 (tmp6)
+     MUXF5:S->O            2   0.401   0.279  c7/u3/cout_f5 (tmp7)
+     MUXF5:S->O            2   0.401   0.279  c8/u3/cout_f5 (tmp8)
+     MUXF5:S->O            2   0.401   0.279  c9/u3/cout_f5 (tmp9)
+     MUXF5:S->O            2   0.401   0.279  c10/u3/cout_f5 (tmp10)
+     MUXF5:S->O            2   0.401   0.279  c11/u3/cout_f5 (tmp11)
+     MUXF5:S->O            2   0.401   0.279  c12/u3/cout_f5 (tmp12)
+     MUXF5:S->O            2   0.401   0.279  c13/u3/cout_f5 (tmp13)
+     MUXF5:S->O            2   0.401   0.279  c14/u3/cout_f5 (tmp14)
+     MUXF5:S->O            2   0.401   0.279  c15/u3/cout_f5 (tmp15)
+     MUXF5:S->O            2   0.401   0.279  c16/u3/cout_f5 (tmp16)
+     MUXF5:S->O            2   0.401   0.279  c17/u3/cout_f5 (tmp17)
+     MUXF5:S->O            2   0.401   0.279  c18/u3/cout_f5 (tmp18)
+     MUXF5:S->O            2   0.401   0.279  c19/u3/cout_f5 (tmp19)
+     MUXF5:S->O            2   0.401   0.279  c20/u3/cout_f5 (tmp20)
+     MUXF5:S->O            2   0.401   0.279  c21/u3/cout_f5 (tmp21)
+     MUXF5:S->O            2   0.401   0.279  c22/u3/cout_f5 (tmp22)
+     MUXF5:S->O            2   0.401   0.279  c23/u3/cout_f5 (tmp23)
+     MUXF5:S->O            2   0.401   0.279  c24/u3/cout_f5 (tmp24)
+     MUXF5:S->O            2   0.401   0.279  c25/u3/cout_f5 (tmp25)
+     MUXF5:S->O            2   0.401   0.279  c26/u3/cout_f5 (tmp26)
+     MUXF5:S->O            2   0.401   0.279  c27/u3/cout_f5 (tmp27)
+     MUXF5:S->O            2   0.401   0.279  c28/u3/cout_f5 (tmp28)
+     MUXF5:S->O            2   0.401   0.279  c29/u3/cout_f5 (tmp29)
+     MUXF5:S->O            3   0.401   0.565  c30/u3/cout_f5 (tmp30)
+     LUT4:I0->O            1   0.147   0.266  Mxor_oflag_Result1 (oflag_OBUF)
+     OBUF:I->O                 3.255          oflag_OBUF (oflag)
+    ----------------------------------------
+    Total                     26.560ns (16.333ns logic, 10.227ns route)
+                                       (61.5% logic, 38.5% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 8.00 secs
+Total CPU time to Xst completion: 7.31 secs
+ 
+--> 
+
+Total memory usage is 4580964 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    3 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

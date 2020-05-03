@@ -1,0 +1,14 @@
+EN alu1b NULL "E:/Semester 4/Architecture/ALU/alu1b.vhd" sub00/vhpl03 1558140758
+EN mux_4to1 NULL "E:/Semester 4/Architecture/ALU/mux_4to1.vhd" sub00/vhpl04 1558140756
+AR alutest behavior "E:/uni/computer architecture/Project/ALUTest.vhd" sub00/vhpl13 1558048466
+AR mux_4to1 behavioral "E:/Semester 4/Architecture/ALU/mux_4to1.vhd" sub00/vhpl08 1558140757
+EN alutest NULL "E:/uni/computer architecture/Project/ALUTest.vhd" sub00/vhpl12 1558048659
+AR adder1b behavioral "E:/Semester 4/Architecture/ALU/adder1b.vhd" sub00/vhpl07 1558140755
+PB my_package my_package "E:/Semester 4/Architecture/ALU/my_package.vhd" sub00/vhpl02 1558133163
+AR alu1b behavioral "E:/Semester 4/Architecture/ALU/alu1b.vhd" sub00/vhpl09 1558140759
+AR mux_2to1 behavioral "E:/Semester 4/Architecture/ALU/mux_2to1.vhd" sub00/vhpl05 1558140753
+EN mux_2to1 NULL "E:/Semester 4/Architecture/ALU/mux_2to1.vhd" sub00/vhpl00 1558140752
+PH my_package NULL "E:/Semester 4/Architecture/ALU/my_package.vhd" sub00/vhpl01 1558140762
+AR alu behavioral "E:/Semester 4/Architecture/ALU/alu.vhd" sub00/vhpl11 1558140761
+EN adder1b NULL "E:/Semester 4/Architecture/ALU/adder1b.vhd" sub00/vhpl06 1558140754
+EN alu NULL "E:/Semester 4/Architecture/ALU/alu.vhd" sub00/vhpl10 1558140760
