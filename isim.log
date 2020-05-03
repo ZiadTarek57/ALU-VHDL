@@ -1,0 +1,21 @@
+ISim log file
+Running: E:\Semester 4\Architecture\ALU\alu_tb_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb E:/Semester 4/Architecture/ALU/alu_tb_isim_beh.wdb 
+ISim P.58f (signature 0x7708f090)
+This is a Full version of ISim.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+at 20 ns: Note: Test1 (/alu_tb/).
+at 20 ns: Error: 1:Fail
+at 31 ns: Note: Test2 (/alu_tb/).
+at 31 ns: Error: 2:Fail
+at 42 ns: Note: Test3 (/alu_tb/).
+at 42 ns: Error: 3:Fail
+at 53 ns: Note: Test4 (/alu_tb/).
+at 64 ns: Note: Test5 (/alu_tb/).
+at 64 ns: Error: 5:Fail
+at 75 ns: Note: Test6 (/alu_tb/).
+at 76 ns: Note: Test Complete (/alu_tb/).

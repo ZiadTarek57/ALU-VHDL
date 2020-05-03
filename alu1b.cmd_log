@@ -1,0 +1,74 @@
+xst -intstyle ise -ifn "E:/uni/computer architecture/ALU/alu1b.xst" -ofn "E:/uni/computer architecture/ALU/alu1b.syr" 
+xst -intstyle ise -ifn "E:/uni/computer architecture/ALU/alu1b.xst" -ofn "E:/uni/computer architecture/ALU/alu1b.syr" 
+xst -intstyle ise -ifn "E:/uni/computer architecture/ALU/alu1b.xst" -ofn "E:/uni/computer architecture/ALU/alu1b.syr" 
+xst -intstyle ise -ifn "E:/uni/computer architecture/ALU/alu1b.xst" -ofn "E:/uni/computer architecture/ALU/alu1b.syr" 
+xst -intstyle ise -ifn "E:/uni/computer architecture/ALU/alu1b.xst" -ofn "E:/uni/computer architecture/ALU/alu1b.syr" 
+xst -intstyle ise -ifn "E:/uni/computer architecture/ALU/alu1b.xst" -ofn "E:/uni/computer architecture/ALU/alu1b.syr" 
+xst -intstyle ise -ifn "E:/uni/computer architecture/ALU/alu1b.xst" -ofn "E:/uni/computer architecture/ALU/alu1b.syr" 
+xst -intstyle ise -ifn "E:/uni/computer architecture/ALU/alu1b.xst" -ofn "E:/uni/computer architecture/ALU/alu1b.syr" 
+xst -intstyle ise -ifn "E:/uni/computer architecture/ALU/alu1b.xst" -ofn "E:/uni/computer architecture/ALU/alu1b.syr" 
+xst -intstyle ise -ifn "E:/uni/computer architecture/ALU/alu1b.xst" -ofn "E:/uni/computer architecture/ALU/alu1b.syr" 
+xst -intstyle ise -ifn "E:/uni/computer architecture/ALU/alu1b.xst" -ofn "E:/uni/computer architecture/ALU/alu1b.syr" 
+xst -intstyle ise -ifn "E:/uni/computer architecture/ALU/alu1b.xst" -ofn "E:/uni/computer architecture/ALU/alu1b.syr" 
+xst -intstyle ise -ifn "E:/uni/computer architecture/ALU/alu1b.xst" -ofn "E:/uni/computer architecture/ALU/alu1b.syr" 
+xst -intstyle ise -ifn "E:/uni/computer architecture/ALU/alu1b.xst" -ofn "E:/uni/computer architecture/ALU/alu1b.syr" 
+xst -intstyle ise -ifn "E:/uni/computer architecture/ALU/alu1b.xst" -ofn "E:/uni/computer architecture/ALU/alu1b.syr" 
+xst -intstyle ise -ifn "E:/uni/computer architecture/ALU/alu1b.xst" -ofn "E:/uni/computer architecture/ALU/alu1b.syr" 
+xst -intstyle ise -ifn "E:/uni/computer architecture/ALU/alu1b.xst" -ofn "E:/uni/computer architecture/ALU/alu1b.syr" 
+xst -intstyle ise -ifn "E:/uni/computer architecture/ALU/alu1b.xst" -ofn "E:/uni/computer architecture/ALU/alu1b.syr" 
+xst -intstyle ise -ifn "E:/uni/computer architecture/ALU/alu1b.xst" -ofn "E:/uni/computer architecture/ALU/alu1b.syr" 
+xst -intstyle ise -ifn "E:/uni/computer architecture/ALU/alu1b.xst" -ofn "E:/uni/computer architecture/ALU/alu1b.syr" 
+xst -intstyle ise -ifn "E:/uni/computer architecture/ALU/alu1b.xst" -ofn "E:/uni/computer architecture/ALU/alu1b.syr" 
+xst -intstyle ise -ifn "E:/uni/computer architecture/ALU/alu1b.xst" -ofn "E:/uni/computer architecture/ALU/alu1b.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc4vfx12-sf363-12 "alu1b.ngc" alu1b.ngd  
+map -intstyle ise -p xc4vfx12-sf363-12 -global_opt off -cm area -ir off -pr off -c 100 -o alu1b_map.ncd alu1b.ngd alu1b.pcf 
+par -w -intstyle ise -ol high -t 1 alu1b_map.ncd alu1b.ncd alu1b.pcf 
+trce -intstyle ise -v 3 -s 12 -n 3 -fastpaths -xml alu1b.twx alu1b.ncd -o alu1b.twr alu1b.pcf 
+xst -intstyle ise -ifn "E:/uni/computer architecture/ALU/alu1b.xst" -ofn "E:/uni/computer architecture/ALU/alu1b.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc4vfx12-sf363-12 "alu1b.ngc" alu1b.ngd  
+map -intstyle ise -p xc4vfx12-sf363-12 -global_opt off -cm area -ir off -pr off -c 100 -o alu1b_map.ncd alu1b.ngd alu1b.pcf 
+par -w -intstyle ise -ol high -t 1 alu1b_map.ncd alu1b.ncd alu1b.pcf 
+trce -intstyle ise -v 3 -s 12 -n 3 -fastpaths -xml alu1b.twx alu1b.ncd -o alu1b.twr alu1b.pcf 
+xst -intstyle ise -ifn "E:/uni/computer architecture/ALU/alu1b.xst" -ofn "E:/uni/computer architecture/ALU/alu1b.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc4vfx12-sf363-12 "alu1b.ngc" alu1b.ngd  
+map -intstyle ise -p xc4vfx12-sf363-12 -global_opt off -cm area -ir off -pr off -c 100 -o alu1b_map.ncd alu1b.ngd alu1b.pcf 
+xst -intstyle ise -ifn "E:/uni/computer architecture/ALU/alu1b.xst" -ofn "E:/uni/computer architecture/ALU/alu1b.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc4vfx12-sf363-12 "alu1b.ngc" alu1b.ngd  
+map -intstyle ise -p xc4vfx12-sf363-12 -global_opt off -cm area -ir off -pr off -c 100 -o alu1b_map.ncd alu1b.ngd alu1b.pcf 
+par -w -intstyle ise -ol high -t 1 alu1b_map.ncd alu1b.ncd alu1b.pcf 
+trce -intstyle ise -v 3 -s 12 -n 3 -fastpaths -xml alu1b.twx alu1b.ncd -o alu1b.twr alu1b.pcf 
+xst -intstyle ise -ifn "E:/uni/computer architecture/ALU/alu1b.xst" -ofn "E:/uni/computer architecture/ALU/alu1b.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc4vfx12-sf363-12 "alu1b.ngc" alu1b.ngd  
+map -intstyle ise -p xc4vfx12-sf363-12 -global_opt off -cm area -ir off -pr off -c 100 -o alu1b_map.ncd alu1b.ngd alu1b.pcf 
+par -w -intstyle ise -ol high -t 1 alu1b_map.ncd alu1b.ncd alu1b.pcf 
+trce -intstyle ise -v 3 -s 12 -n 3 -fastpaths -xml alu1b.twx alu1b.ncd -o alu1b.twr alu1b.pcf 
+xst -intstyle ise -ifn "E:/uni/computer architecture/ALU/alu1b.xst" -ofn "E:/uni/computer architecture/ALU/alu1b.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc4vfx12-sf363-12 "alu1b.ngc" alu1b.ngd  
+map -intstyle ise -p xc4vfx12-sf363-12 -global_opt off -cm area -ir off -pr off -c 100 -o alu1b_map.ncd alu1b.ngd alu1b.pcf 
+par -w -intstyle ise -ol high -t 1 alu1b_map.ncd alu1b.ncd alu1b.pcf 
+trce -intstyle ise -v 3 -s 12 -n 3 -fastpaths -xml alu1b.twx alu1b.ncd -o alu1b.twr alu1b.pcf 
+xst -intstyle ise -ifn "E:/uni/computer architecture/ALU/alu1b.xst" -ofn "E:/uni/computer architecture/ALU/alu1b.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc4vfx12-sf363-12 "alu1b.ngc" alu1b.ngd  
+map -intstyle ise -p xc4vfx12-sf363-12 -global_opt off -cm area -ir off -pr off -c 100 -o alu1b_map.ncd alu1b.ngd alu1b.pcf 
+par -w -intstyle ise -ol high -t 1 alu1b_map.ncd alu1b.ncd alu1b.pcf 
+trce -intstyle ise -v 3 -s 12 -n 3 -fastpaths -xml alu1b.twx alu1b.ncd -o alu1b.twr alu1b.pcf 
+xst -intstyle ise -ifn "E:/uni/computer architecture/ALU/alu1b.xst" -ofn "E:/uni/computer architecture/ALU/alu1b.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc4vfx12-sf363-12 "alu1b.ngc" alu1b.ngd  
+map -intstyle ise -p xc4vfx12-sf363-12 -global_opt off -cm area -ir off -pr off -c 100 -o alu1b_map.ncd alu1b.ngd alu1b.pcf 
+par -w -intstyle ise -ol high -t 1 alu1b_map.ncd alu1b.ncd alu1b.pcf 
+trce -intstyle ise -v 3 -s 12 -n 3 -fastpaths -xml alu1b.twx alu1b.ncd -o alu1b.twr alu1b.pcf 
+xst -intstyle ise -ifn "E:/uni/computer architecture/ALU/alu1b.xst" -ofn "E:/uni/computer architecture/ALU/alu1b.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc4vfx12-sf363-12 "alu1b.ngc" alu1b.ngd  
+map -intstyle ise -p xc4vfx12-sf363-12 -global_opt off -cm area -ir off -pr off -c 100 -o alu1b_map.ncd alu1b.ngd alu1b.pcf 
+par -w -intstyle ise -ol high -t 1 alu1b_map.ncd alu1b.ncd alu1b.pcf 
+trce -intstyle ise -v 3 -s 12 -n 3 -fastpaths -xml alu1b.twx alu1b.ncd -o alu1b.twr alu1b.pcf 
+xst -intstyle ise -ifn "E:/uni/computer architecture/ALU/alu1b.xst" -ofn "E:/uni/computer architecture/ALU/alu1b.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc4vfx12-sf363-12 "alu1b.ngc" alu1b.ngd  
+map -intstyle ise -p xc4vfx12-sf363-12 -global_opt off -cm area -ir off -pr off -c 100 -o alu1b_map.ncd alu1b.ngd alu1b.pcf 
+par -w -intstyle ise -ol high -t 1 alu1b_map.ncd alu1b.ncd alu1b.pcf 
+trce -intstyle ise -v 3 -s 12 -n 3 -fastpaths -xml alu1b.twx alu1b.ncd -o alu1b.twr alu1b.pcf 
+xst -intstyle ise -ifn "E:/uni/computer architecture/ALU/alu1b.xst" -ofn "E:/uni/computer architecture/ALU/alu1b.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc4vfx12-sf363-12 "alu1b.ngc" alu1b.ngd  
+map -intstyle ise -p xc4vfx12-sf363-12 -global_opt off -cm area -ir off -pr off -c 100 -o alu1b_map.ncd alu1b.ngd alu1b.pcf 
+par -w -intstyle ise -ol high -t 1 alu1b_map.ncd alu1b.ncd alu1b.pcf 
+trce -intstyle ise -v 3 -s 12 -n 3 -fastpaths -xml alu1b.twx alu1b.ncd -o alu1b.twr alu1b.pcf 

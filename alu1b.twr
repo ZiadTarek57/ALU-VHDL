@@ -1,0 +1,70 @@
+--------------------------------------------------------------------------------
+Release 14.5 Trace  (nt)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.5\ISE_DS\ISE\bin\nt\unwrapped\trce.exe -intstyle ise -v 3 -s 12 -n
+3 -fastpaths -xml alu1b.twx alu1b.ncd -o alu1b.twr alu1b.pcf
+
+Design file:              alu1b.ncd
+Physical constraint file: alu1b.pcf
+Device,package,speed:     xc4vfx12,sf363,-12 (PRODUCTION 1.71 2013-03-26, STEPPING level 0)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+a              |cout           |    5.453|
+a              |overflow       |    5.539|
+a              |res            |    6.299|
+ainv           |cout           |    5.574|
+ainv           |overflow       |    5.399|
+ainv           |res            |    6.515|
+b              |cout           |    5.764|
+b              |overflow       |    5.935|
+b              |res            |    6.388|
+binv           |cout           |    5.669|
+binv           |overflow       |    5.840|
+binv           |res            |    6.039|
+cin            |cout           |    5.527|
+cin            |overflow       |    5.444|
+cin            |res            |    6.266|
+op<0>          |res            |    6.350|
+op<1>          |res            |    6.172|
+op<2>          |res            |    6.054|
+op<3>          |res            |    5.811|
+---------------+---------------+---------+
+
+
+Analysis completed Fri May 17 00:53:04 2019 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 208 MB
+
+
+

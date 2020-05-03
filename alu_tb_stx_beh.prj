@@ -1,0 +1,7 @@
+vhdl isim_temp "my_package.vhd"
+vhdl isim_temp "mux_4to1.vhd"
+vhdl isim_temp "mux_2to1.vhd"
+vhdl isim_temp "adder1b.vhd"
+vhdl isim_temp "alu1b.vhd"
+vhdl isim_temp "alu.vhd"
+vhdl isim_temp "alu_tb.vhd"

@@ -1,0 +1,32 @@
+Running: C:\Xilinx\14.5\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib secureip -o E:/Semester 4/Architecture/ALU/alu_tb_isim_beh.exe -prj E:/Semester 4/Architecture/ALU/alu_tb_beh.prj work.alu_tb 
+ISim P.58f (signature 0x7708f090)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Parsing VHDL file "E:/Semester 4/Architecture/ALU/my_package.vhd" into library work
+Parsing VHDL file "E:/Semester 4/Architecture/ALU/mux_4to1.vhd" into library work
+Parsing VHDL file "E:/Semester 4/Architecture/ALU/mux_2to1.vhd" into library work
+Parsing VHDL file "E:/Semester 4/Architecture/ALU/adder1b.vhd" into library work
+Parsing VHDL file "E:/Semester 4/Architecture/ALU/alu1b.vhd" into library work
+WARNING:HDLCompiler:946 - "E:/Semester 4/Architecture/ALU/alu1b.vhd" Line 66: Actual for formal port b is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "E:/Semester 4/Architecture/ALU/alu1b.vhd" Line 70: Actual for formal port b is neither a static name nor a globally static expression
+Parsing VHDL file "E:/Semester 4/Architecture/ALU/alu.vhd" into library work
+Parsing VHDL file "E:/Semester 4/Architecture/ALU/alu_tb.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package numeric_std
+Compiling package my_package
+Compiling architecture behavioral of entity mux_2to1 [mux_2to1_default]
+Compiling architecture behavioral of entity adder1b [adder1b_default]
+Compiling architecture behavioral of entity mux_4to1 [mux_4to1_default]
+Compiling architecture behavioral of entity alu1b [alu1b_default]
+Compiling architecture behavioral of entity alu [alu_default]
+Compiling architecture behavior of entity alu_tb
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 15 VHDL Units
+Built simulation executable E:/Semester 4/Architecture/ALU/alu_tb_isim_beh.exe
+Fuse Memory Usage: 35004 KB
+Fuse CPU Usage: 437 ms

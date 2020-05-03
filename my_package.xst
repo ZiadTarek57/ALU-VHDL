@@ -1,0 +1,5 @@
+set -tmpdir "E:/uni/computer architecture/ALU/xst/projnav.tmp"
+set -xsthdpdir "E:/uni/computer architecture/ALU/xst"
+elaborate
+-ifn my_package.prj
+-ifmt mixed

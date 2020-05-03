@@ -1,0 +1,6 @@
+vhdl work "E:\Semester 4\Architecture\ALU\my_package.vhd"
+vhdl work "E:\Semester 4\Architecture\ALU\mux_4to1.vhd"
+vhdl work "E:\Semester 4\Architecture\ALU\mux_2to1.vhd"
+vhdl work "E:\Semester 4\Architecture\ALU\adder1b.vhd"
+vhdl work "E:\Semester 4\Architecture\ALU\alu1b.vhd"
+vhdl work "E:\Semester 4\Architecture\ALU\alu.vhd"
